@@ -1,6 +1,7 @@
 ﻿using dnlib.DotNet;
 using dnlib.DotNet.MD;
 using dnlib.DotNet.Writer;
+using dnlib.PE;
 using MagicDeobfuscator.Core.Deobfuscation.Deobfuscator.Base;
 using MagicDeobfuscator.Core.Deobfuscation.Deobfuscator.Callbackable;
 using MagicDeobfuscator.Core.Deobfuscation.Deobfuscator.Container;
@@ -32,16 +33,16 @@ namespace MagicDeobfuscator
             Console.WriteLine("Deobfuscating..!");
             foreach (DeobfuscatorBase deobfuscator in container.Deobfuscators)
             {
+                Console.WriteLine("! Launching deobfuscator: " + deobfuscator.GetType().Name);
                 deobfuscator.Deobfuscate();
             }
-            Console.WriteLine("Deobfuscating completed..!");
-
+            Console.WriteLine("Cleaning completed..!");
             Console.WriteLine("Writing the file...");
             new ModuleBuilder(moduleDefModel)
                 .SetMetadataFlags(new MetadataFlagsModel(MetadataFlags.PreserveAll))
                 .SetNoThrowInstance()
                 .SetCor20HeaderOptionsFlag(new Cor20HeaderOptionsFlag(ComImageFlags.ILOnly))
-                .Build(Path.GetFileNameWithoutExtension(args[0]) + "_deobfuscated" + Path.GetExtension(args[0]));
+                .Build(Path.GetFileNameWithoutExtension(args[0]) + "_cleaned" + Path.GetExtension(args[0]));
             Console.WriteLine("Writed!...");
 
             Console.ReadLine();

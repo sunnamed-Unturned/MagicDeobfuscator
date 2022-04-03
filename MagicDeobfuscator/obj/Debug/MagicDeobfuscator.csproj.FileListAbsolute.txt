@@ -1,0 +1,10 @@
+D:\Github\MagicDeobfuscator\MagicDeobfuscator\bin\Debug\MagicDeobfuscator.exe.config
+D:\Github\MagicDeobfuscator\MagicDeobfuscator\bin\Debug\MagicDeobfuscator.exe
+D:\Github\MagicDeobfuscator\MagicDeobfuscator\bin\Debug\MagicDeobfuscator.pdb
+D:\Github\MagicDeobfuscator\MagicDeobfuscator\bin\Debug\dnlib.dll
+D:\Github\MagicDeobfuscator\MagicDeobfuscator\obj\Debug\MagicDeobfuscator.csproj.AssemblyReference.cache
+D:\Github\MagicDeobfuscator\MagicDeobfuscator\obj\Debug\MagicDeobfuscator.csproj.SuggestedBindingRedirects.cache
+D:\Github\MagicDeobfuscator\MagicDeobfuscator\obj\Debug\MagicDeobfuscator.csproj.CoreCompileInputs.cache
+D:\Github\MagicDeobfuscator\MagicDeobfuscator\obj\Debug\MagicDeobfuscator.csproj.CopyComplete
+D:\Github\MagicDeobfuscator\MagicDeobfuscator\obj\Debug\MagicDeobfuscator.exe
+D:\Github\MagicDeobfuscator\MagicDeobfuscator\obj\Debug\MagicDeobfuscator.pdb

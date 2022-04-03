@@ -7,3 +7,13 @@ C:\Users\sunnamed\source\repos\MagicDeobfuscator\MagicDeobfuscator\obj\Release\M
 C:\Users\sunnamed\source\repos\MagicDeobfuscator\MagicDeobfuscator\obj\Release\MagicDeobfuscator.csproj.CopyComplete
 C:\Users\sunnamed\source\repos\MagicDeobfuscator\MagicDeobfuscator\obj\Release\MagicDeobfuscator.exe
 C:\Users\sunnamed\source\repos\MagicDeobfuscator\MagicDeobfuscator\obj\Release\MagicDeobfuscator.pdb
+D:\Github\MagicDeobfuscator\MagicDeobfuscator\bin\Release\MagicDeobfuscator.exe.config
+D:\Github\MagicDeobfuscator\MagicDeobfuscator\bin\Release\MagicDeobfuscator.exe
+D:\Github\MagicDeobfuscator\MagicDeobfuscator\bin\Release\MagicDeobfuscator.pdb
+D:\Github\MagicDeobfuscator\MagicDeobfuscator\bin\Release\dnlib.dll
+D:\Github\MagicDeobfuscator\MagicDeobfuscator\obj\Release\MagicDeobfuscator.csproj.SuggestedBindingRedirects.cache
+D:\Github\MagicDeobfuscator\MagicDeobfuscator\obj\Release\MagicDeobfuscator.csproj.CoreCompileInputs.cache
+D:\Github\MagicDeobfuscator\MagicDeobfuscator\obj\Release\MagicDeobfuscator.csproj.CopyComplete
+D:\Github\MagicDeobfuscator\MagicDeobfuscator\obj\Release\MagicDeobfuscator.exe
+D:\Github\MagicDeobfuscator\MagicDeobfuscator\obj\Release\MagicDeobfuscator.pdb
+D:\Github\MagicDeobfuscator\MagicDeobfuscator\obj\Release\MagicDeobfuscator.csproj.AssemblyReference.cache
