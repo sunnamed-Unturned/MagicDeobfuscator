@@ -1,0 +1,9 @@
+C:\Users\sunnamed\source\repos\MagicDeobfuscator\MagicDeobfuscator\bin\Release\MagicDeobfuscator.exe.config
+C:\Users\sunnamed\source\repos\MagicDeobfuscator\MagicDeobfuscator\bin\Release\MagicDeobfuscator.exe
+C:\Users\sunnamed\source\repos\MagicDeobfuscator\MagicDeobfuscator\bin\Release\MagicDeobfuscator.pdb
+C:\Users\sunnamed\source\repos\MagicDeobfuscator\MagicDeobfuscator\bin\Release\dnlib.dll
+C:\Users\sunnamed\source\repos\MagicDeobfuscator\MagicDeobfuscator\obj\Release\MagicDeobfuscator.csproj.SuggestedBindingRedirects.cache
+C:\Users\sunnamed\source\repos\MagicDeobfuscator\MagicDeobfuscator\obj\Release\MagicDeobfuscator.csproj.CoreCompileInputs.cache
+C:\Users\sunnamed\source\repos\MagicDeobfuscator\MagicDeobfuscator\obj\Release\MagicDeobfuscator.csproj.CopyComplete
+C:\Users\sunnamed\source\repos\MagicDeobfuscator\MagicDeobfuscator\obj\Release\MagicDeobfuscator.exe
+C:\Users\sunnamed\source\repos\MagicDeobfuscator\MagicDeobfuscator\obj\Release\MagicDeobfuscator.pdb
