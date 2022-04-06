@@ -1,5 +1,4 @@
 ﻿using MagicDeobfuscator.Core.Deobfuscation.Models.Module;
-using System;
 
 namespace MagicDeobfuscator.Core.Deobfuscation.Deobfuscator.Base
 {

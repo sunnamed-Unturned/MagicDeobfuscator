@@ -1,7 +1,7 @@
 ﻿using dnlib.DotNet;
+using dnlib.DotNet.Emit;
 using dnlib.DotNet.MD;
 using dnlib.DotNet.Writer;
-using dnlib.PE;
 using MagicDeobfuscator.Core.Deobfuscation.Deobfuscator.Base;
 using MagicDeobfuscator.Core.Deobfuscation.Deobfuscator.Callbackable;
 using MagicDeobfuscator.Core.Deobfuscation.Deobfuscator.Container;
@@ -13,6 +13,7 @@ using MagicDeobfuscator.Core.Deobfuscation.Module.Builder;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 
 namespace MagicDeobfuscator
 {
@@ -26,8 +27,14 @@ namespace MagicDeobfuscator
 
             DeobfuscatorsContainer container = new DeobfuscatorsContainer(new List<DeobfuscatorBase>
             {
-                new NopCleanerDeobfuscator(moduleDefModel),
                 new CodeBrokerCleanerDeobfuscator(moduleDefModel),
+                new TypesRenamerDeobfuscator(moduleDefModel),
+                new MethodsRenamerDeobfuscator(moduleDefModel),
+                new FieldsRenamerDeobfuscator(moduleDefModel),
+                new PropertiesRenamerDeobfuscator(moduleDefModel),
+                new GenericFixerDeobfuscator(moduleDefModel),
+                new ModuleRenamerDeobfuscator(moduleDefModel),
+                //new NopCleanerDeobfuscator(moduleDefModel),
             });
 
             Console.WriteLine("Deobfuscating..!");

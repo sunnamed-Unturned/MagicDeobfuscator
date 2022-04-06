@@ -48,6 +48,12 @@
   <ItemGroup>
     <Compile Include="Core\Deobfuscation\Deobfuscator\Callbackable\CallbackableDeobfuscator.cs" />
     <Compile Include="Core\Deobfuscation\Deobfuscator\Container\IDeobfuscatorContainer.cs" />
+    <Compile Include="Core\Deobfuscation\Deobfuscator\Deobfuscators\FieldsRenamerDeobfuscator.cs" />
+    <Compile Include="Core\Deobfuscation\Deobfuscator\Deobfuscators\GenericFixerDeobfuscator.cs" />
+    <Compile Include="Core\Deobfuscation\Deobfuscator\Deobfuscators\MethodsRenamerDeobfuscator.cs" />
+    <Compile Include="Core\Deobfuscation\Deobfuscator\Deobfuscators\ModuleRenamerDeobfuscator.cs" />
+    <Compile Include="Core\Deobfuscation\Deobfuscator\Deobfuscators\PropertiesRenamerDeobfuscator.cs" />
+    <Compile Include="Core\Deobfuscation\Deobfuscator\Deobfuscators\TypesRenamerDeobfuscator.cs" />
     <Compile Include="Core\Deobfuscation\Module\Builder\IModuleBuilder.cs" />
     <Compile Include="Core\Deobfuscation\Module\Builder\ModuleBuilder.cs" />
     <Compile Include="Core\Deobfuscation\Deobfuscator\Base\DeobfuscatorBase.cs" />

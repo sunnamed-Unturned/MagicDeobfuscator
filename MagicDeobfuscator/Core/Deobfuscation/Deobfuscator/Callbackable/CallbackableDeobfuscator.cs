@@ -11,12 +11,11 @@ namespace MagicDeobfuscator.Core.Deobfuscation.Deobfuscator.Callbackable
 
 
         public CallbackableDeobfuscator(ModuleDefModel moduleDefModel, Action<ModuleDefModel> onDeobfuscate) : base(moduleDefModel)
-        {
-            OnDeobfuscate = onDeobfuscate;
-        }
+            => OnDeobfuscate = onDeobfuscate;
 
 
 
-        public override void Deobfuscate() => OnDeobfuscate?.Invoke(base.ModuleDefModel);
+        public override void Deobfuscate()
+            => OnDeobfuscate?.Invoke(base.ModuleDefModel);
     }
 }
