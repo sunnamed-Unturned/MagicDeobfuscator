@@ -14,14 +14,14 @@ namespace MagicDeobfuscator.Core.Deobfuscation.Deobfuscator.Deobfuscators
 
         public override void Deobfuscate()
         {
-            foreach (TypeDef typeDef in base.ModuleDefModel.Result.GetTypes())
+            foreach (TypeDef type in base.ModuleDefModel.Result.GetTypes())
             {
-                foreach (GenericParam generic in typeDef.GenericParameters)
+                foreach (GenericParam generic in type.GenericParameters)
                 {
                     generic.Name = generic.Name.Replace('-', 'T');
                 }
 
-                foreach (MethodDef method in typeDef.Methods)
+                foreach (MethodDef method in type.Methods)
                 {
                     foreach (GenericParam generic in method.GenericParameters)
                     {

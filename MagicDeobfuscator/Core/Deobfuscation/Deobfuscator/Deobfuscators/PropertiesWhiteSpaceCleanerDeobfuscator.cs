@@ -1,13 +1,12 @@
 ﻿using dnlib.DotNet;
 using MagicDeobfuscator.Core.Deobfuscation.Deobfuscator.Base;
 using MagicDeobfuscator.Core.Deobfuscation.Models.Module;
-using System;
 
 namespace MagicDeobfuscator.Core.Deobfuscation.Deobfuscator.Deobfuscators
 {
-    public sealed class ModuleRenamerDeobfuscator : DeobfuscatorBase
+    internal class PropertiesWhiteSpaceCleanerDeobfuscator : DeobfuscatorBase
     {
-        public ModuleRenamerDeobfuscator(ModuleDefModel moduleDefModel) : base(moduleDefModel)
+        public PropertiesWhiteSpaceCleanerDeobfuscator(ModuleDefModel moduleDefModel) : base(moduleDefModel)
         {
         }
 
@@ -17,10 +16,12 @@ namespace MagicDeobfuscator.Core.Deobfuscation.Deobfuscator.Deobfuscators
         {
             foreach (TypeDef type in base.ModuleDefModel.Result.GetTypes())
             {
-                if (type.Name.Contains("Module"))
+                if (type.HasProperties)
                 {
-                    type.Name = type.Name.String.Replace("<", string.Empty).Replace(">", string.Empty);
-                    type.BaseType = new Importer(base.ModuleDefModel.Result).Import(typeof(Object));
+                    foreach (PropertyDef property in type.Properties)
+                    {
+                        property.Name = property.Name.String.Trim();
+                    }
                 }
             }
         }

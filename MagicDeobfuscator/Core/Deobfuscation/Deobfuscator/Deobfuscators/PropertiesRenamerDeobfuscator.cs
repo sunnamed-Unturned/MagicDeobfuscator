@@ -14,16 +14,16 @@ namespace MagicDeobfuscator.Core.Deobfuscation.Deobfuscator.Deobfuscators
 
         public override void Deobfuscate()
         {
-            foreach (TypeDef typeDef in base.ModuleDefModel.Result.GetTypes())
+            foreach (TypeDef type in base.ModuleDefModel.Result.GetTypes())
             {
-                if (typeDef.HasProperties)
+                if (type.HasProperties)
                 {
-                    foreach (PropertyDef propertyDef in typeDef.Properties)
+                    foreach (PropertyDef property in type.Properties)
                     {
-                        string propertyDefName = propertyDef.Name.String;
+                        string propertyDefName = property.Name.String;
                         string[] splittedDefName = propertyDefName.Split('.');
 
-                        propertyDef.Name = splittedDefName[splittedDefName.Length - 1];
+                        property.Name = splittedDefName[splittedDefName.Length - 1];
                     }
                 }
             }

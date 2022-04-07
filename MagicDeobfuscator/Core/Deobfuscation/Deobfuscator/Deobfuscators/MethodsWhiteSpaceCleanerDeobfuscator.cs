@@ -4,9 +4,9 @@ using MagicDeobfuscator.Core.Deobfuscation.Models.Module;
 
 namespace MagicDeobfuscator.Core.Deobfuscation.Deobfuscator.Deobfuscators
 {
-    public sealed class MethodsRenamerDeobfuscator : DeobfuscatorBase
+    public class MethodsWhiteSpaceCleanerDeobfuscator : DeobfuscatorBase
     {
-        public MethodsRenamerDeobfuscator(ModuleDefModel moduleDefModel) : base(moduleDefModel)
+        public MethodsWhiteSpaceCleanerDeobfuscator(ModuleDefModel moduleDefModel) : base(moduleDefModel)
         {
         }
 
@@ -18,15 +18,7 @@ namespace MagicDeobfuscator.Core.Deobfuscation.Deobfuscator.Deobfuscators
             {
                 foreach (MethodDef method in type.Methods)
                 {
-                    if (method.IsConstructor)
-                    {
-                        continue;
-                    }
-
-                    string methodName = method.Name.String;
-                    string[] splittedMethodName = methodName.Split('.');
-
-                    method.Name = splittedMethodName[splittedMethodName.Length - 1];
+                    method.Name = method.Name.Trim();
                 }
             }
         }

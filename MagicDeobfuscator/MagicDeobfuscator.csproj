@@ -49,11 +49,17 @@
     <Compile Include="Core\Deobfuscation\Deobfuscator\Callbackable\CallbackableDeobfuscator.cs" />
     <Compile Include="Core\Deobfuscation\Deobfuscator\Container\IDeobfuscatorContainer.cs" />
     <Compile Include="Core\Deobfuscation\Deobfuscator\Deobfuscators\FieldsRenamerDeobfuscator.cs" />
+    <Compile Include="Core\Deobfuscation\Deobfuscator\Deobfuscators\FieldsSpecialSpamRenamerDeobfuscator.cs" />
+    <Compile Include="Core\Deobfuscation\Deobfuscator\Deobfuscators\FieldsWhiteSpaceCleanerDeobfuscator.cs" />
     <Compile Include="Core\Deobfuscation\Deobfuscator\Deobfuscators\GenericFixerDeobfuscator.cs" />
     <Compile Include="Core\Deobfuscation\Deobfuscator\Deobfuscators\MethodsRenamerDeobfuscator.cs" />
+    <Compile Include="Core\Deobfuscation\Deobfuscator\Deobfuscators\MethodsWhiteSpaceCleanerDeobfuscator.cs" />
     <Compile Include="Core\Deobfuscation\Deobfuscator\Deobfuscators\ModuleRenamerDeobfuscator.cs" />
     <Compile Include="Core\Deobfuscation\Deobfuscator\Deobfuscators\PropertiesRenamerDeobfuscator.cs" />
+    <Compile Include="Core\Deobfuscation\Deobfuscator\Deobfuscators\PropertiesWhiteSpaceCleanerDeobfuscator.cs" />
+    <Compile Include="Core\Deobfuscation\Deobfuscator\Deobfuscators\TypesSpecialNameSpamRenamerDeobfuscator.cs" />
     <Compile Include="Core\Deobfuscation\Deobfuscator\Deobfuscators\TypesRenamerDeobfuscator.cs" />
+    <Compile Include="Core\Deobfuscation\Deobfuscator\Deobfuscators\TypesWhiteSpaceCleanerDeobfuscator.cs" />
     <Compile Include="Core\Deobfuscation\Module\Builder\IModuleBuilder.cs" />
     <Compile Include="Core\Deobfuscation\Module\Builder\ModuleBuilder.cs" />
     <Compile Include="Core\Deobfuscation\Deobfuscator\Base\DeobfuscatorBase.cs" />

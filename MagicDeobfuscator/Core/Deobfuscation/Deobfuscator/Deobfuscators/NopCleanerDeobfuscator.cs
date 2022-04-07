@@ -17,9 +17,9 @@ namespace MagicDeobfuscator.Core.Deobfuscation.Deobfuscator.Deobfuscators
 
         public override void Deobfuscate()
         {
-            foreach (TypeDef typeDef in base.ModuleDefModel.Result.GetTypes())
+            foreach (TypeDef type in base.ModuleDefModel.Result.GetTypes())
             {
-                foreach (MethodDef method in typeDef.Methods)
+                foreach (MethodDef method in type.Methods)
                 {
                     if (method.HasBody == false)
                     {

@@ -4,9 +4,9 @@ using MagicDeobfuscator.Core.Deobfuscation.Models.Module;
 
 namespace MagicDeobfuscator.Core.Deobfuscation.Deobfuscator.Deobfuscators
 {
-    public sealed class TypesRenamerDeobfuscator : DeobfuscatorBase
+    public class TypesSpecialNameSpamRenamerDeobfuscator : DeobfuscatorBase
     {
-        public TypesRenamerDeobfuscator(ModuleDefModel moduleDefModel) : base(moduleDefModel)
+        public TypesSpecialNameSpamRenamerDeobfuscator(ModuleDefModel moduleDefModel) : base(moduleDefModel)
         {
         }
 
@@ -17,8 +17,11 @@ namespace MagicDeobfuscator.Core.Deobfuscation.Deobfuscator.Deobfuscators
             foreach (TypeDef type in base.ModuleDefModel.Result.GetTypes())
             {
                 string typeDefName = type.Name.String;
-                string[] splittedTypeDefName = typeDefName.Split('.');
-                type.Name = splittedTypeDefName[splittedTypeDefName.Length - 1];
+                string[] splittedTypeDefName = typeDefName.Split('(');
+                if (splittedTypeDefName.Length != 0)
+                {
+                    type.Name = splittedTypeDefName[0];
+                }
             }
         }
     }

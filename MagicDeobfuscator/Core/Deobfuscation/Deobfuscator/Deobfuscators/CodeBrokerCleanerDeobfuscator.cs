@@ -2,13 +2,12 @@
 using dnlib.DotNet.Emit;
 using MagicDeobfuscator.Core.Deobfuscation.Deobfuscator.Base;
 using MagicDeobfuscator.Core.Deobfuscation.Models.Module;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace MagicDeobfuscator.Core.Deobfuscation.Deobfuscator.Deobfuscators
 {
-    public sealed class CodeBrokerCleanerDeobfuscator: DeobfuscatorBase
+    public sealed class CodeBrokerCleanerDeobfuscator : DeobfuscatorBase
     {
         public CodeBrokerCleanerDeobfuscator(ModuleDefModel moduleDefModel) : base(moduleDefModel)
         {
@@ -18,9 +17,9 @@ namespace MagicDeobfuscator.Core.Deobfuscation.Deobfuscator.Deobfuscators
 
         public override void Deobfuscate()
         {
-            foreach (TypeDef typeDef in base.ModuleDefModel.Result.GetTypes())
+            foreach (TypeDef type in base.ModuleDefModel.Result.GetTypes())
             {
-                foreach (MethodDef method in typeDef.Methods)
+                foreach (MethodDef method in type.Methods)
                 {
                     if (method.HasBody == false)
                     {
