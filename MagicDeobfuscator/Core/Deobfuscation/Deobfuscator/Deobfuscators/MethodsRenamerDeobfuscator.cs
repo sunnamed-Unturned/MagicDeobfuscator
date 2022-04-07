@@ -18,15 +18,13 @@ namespace MagicDeobfuscator.Core.Deobfuscation.Deobfuscator.Deobfuscators
             {
                 foreach (MethodDef method in type.Methods)
                 {
-                    if (method.IsConstructor)
+                    if (method.IsConstructor == false)
                     {
-                        continue;
+                        string methodName = method.Name.String;
+                        string[] splittedMethodName = methodName.Split('.');
+
+                        method.Name = splittedMethodName[splittedMethodName.Length - 1];
                     }
-
-                    string methodName = method.Name.String;
-                    string[] splittedMethodName = methodName.Split('.');
-
-                    method.Name = splittedMethodName[splittedMethodName.Length - 1];
                 }
             }
         }

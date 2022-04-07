@@ -26,3 +26,4 @@ D:\Github\MagicDeobfuscator\MagicDeobfuscator\obj\Release\MagicDeobfuscator.cspr
 D:\Github\MagicDeobfuscator\MagicDeobfuscator\obj\Release\MagicDeobfuscator.csproj.CopyComplete
 D:\Github\MagicDeobfuscator\MagicDeobfuscator\obj\Release\MagicDeobfuscator.exe
 D:\Github\MagicDeobfuscator\MagicDeobfuscator\obj\Release\MagicDeobfuscator.pdb
+D:\Github\MagicDeobfuscator\MagicDeobfuscator\obj\Release\MagicDeobfuscator.csproj.AssemblyReference.cache
