@@ -64,12 +64,5 @@ namespace MagicDeobfuscator
 
             Console.ReadLine();
         }
-
-
-
-        private static void onDeobfuscate(ModuleDefModel moduleDefModel)
-        {
-            
-        }
     }
 }
