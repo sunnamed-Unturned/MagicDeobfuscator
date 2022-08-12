@@ -1,6 +1,7 @@
 ﻿using dnlib.DotNet;
 using dnlib.DotNet.MD;
 using dnlib.DotNet.Writer;
+using dnlib.PE;
 using MagicDeobfuscator.Core.Deobfuscation.Deobfuscator.Base;
 using MagicDeobfuscator.Core.Deobfuscation.Deobfuscator.Callbackable;
 using MagicDeobfuscator.Core.Deobfuscation.Deobfuscator.Container;
@@ -23,7 +24,7 @@ namespace MagicDeobfuscator
             AssemblyDef assmeblyDef = AssemblyDef.Load(args[0]);
             ModuleDef moduleDef = assmeblyDef.ManifestModule;
             ModuleDefModel moduleDefModel = new ModuleDefModel(moduleDef);
-
+            
             DeobfuscatorsContainer container = new DeobfuscatorsContainer(new List<DeobfuscatorBase>
             {
                 new CodeBrokerCleanerDeobfuscator(moduleDefModel),
